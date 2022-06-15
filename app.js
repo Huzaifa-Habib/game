@@ -1,8 +1,8 @@
  // Take input from user==================================
 
- var input = prompt("Enter a word which consist not more than 4 characters");
+ var input = document.getElementById("guess");
 
- var guess=input.value;
+ var guess1=input.value;
 
 
 // Declare letters=========================================
@@ -32,18 +32,18 @@ function randomWords() {
 lettersArray=lettersArray.join("");
 
 // Checking user guess against random generated string==========================================
-if (guess === lettersArray) {
+if (guess1 === lettersArray) {
   alert("You got it right");
 
 }
 
-else if (guess !== lettersArray){
+else if (guess1 !== lettersArray){
   alert("Wrong");
 }
 
 
 // Print random generated string===============================================================
-console.log(lettersArray);
+document.getElementById("correct").innerHTML=(" <h3>The Correct Answer is " + lettersArray+"</h3>");
 
 }
 
