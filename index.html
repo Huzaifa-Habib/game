@@ -4,26 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word guess game </title>
+    <title>Word Guess Game</title>
+
+    <style>
+        body{
+            background-color: rgb(27, 26, 26);
+        }
+        .t{
+            background-color: rgb(0, 162, 255);
+            font-size: 60px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:3px 18px;
+            border-radius: 10px;
+        }
+
+        .h{
+            background-color: yellow;
+            font-size: 60px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:3px 18px;
+            border-radius: 10px;
+
+
+        }
+
+        .e{
+            background-color: rgb(221, 90, 107);
+            font-size: 60px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:3px 18px;
+            border-radius: 10px;
+
+        }
+
+        .m{
+            background-color: rgb(105, 206, 22);
+            font-size: 60px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:3px 18px;
+            border-radius: 10px;
+        }
+
+        .w{
+            background-color: rgb(221, 90, 107);
+            margin-left: 20px;
+            border-radius: 10px;
+            font-size: 60px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:3px 18px;
+
+        }
+
+        .parent {
+            text-align: center;
+            margin-top: 120px;
+
+        }
+
+        .child{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    .sub{
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        
+   
+
+    .wrapper{
+        position: fixed;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+    a{
+        display: block;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: white;
+        border: 2px solid #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        }
+
+    a span{
+        position: relative;
+        z-index: 2;
+        }
+
+    a:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: rgb(23, 218, 23);
+        transition: all .35s;
+        }
+
+    a:hover{
+        color: black;
+        font-weight: bold;
+        }
+
+    a:hover:after{
+        width: 100%;
+        }
+
+            
+
+
+
+
+
+
+
+
+    </style>
+
 </head>
+
+
+
+
 <body>
+    <div class="parent">
+        <span class="t">T</span> <span class="h">H</span> <span class="e">E</span> <br>
+    </div>
 
+    <div class="child">
+        <span class="m">M</span> <span class="t">Y</span> <span class="h">S</span> <span class="e">T</span>
+        <span class="m">E</span> <span class="t">R</span>
+        <span class="h">Y</span>  <span class="w">W</span> <span class="m">O</span>
+         <span class="t">R</span> <span class="h">D</span> <br>
 
+    </div>
 
+    <div class="sub">
+        <span class="e">G</span> <span class="m">A</span> <span class="t">M</span> <span class="h">E</span>
 
+    </div>
 
-
-
-
-
-    <button onclick="randomWords()" id="click">click</button>
-
-
-
+    <div class="wrapper">
+        <a href="./page1/game.html"><span>Let's Start</span></a>
+      </div>
     
-
-
-
-    <script src="./app.js"></script>
 </body>
 </html>
